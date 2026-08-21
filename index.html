@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Powered Procurement ERP</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="landing-page" data-landing-page>
+      <header class="landing-nav"><div class="brand-lockup"><span class="brand-mark">A</span><span>AI-Powered Procurement ERP</span></div><nav><a href="#workflow">How it works</a><a href="#product">Product</a><span>PREVIEW MODE</span><a class="landing-cta" href="/dashboard" data-enter-erp>Enter Procurement ERP <b>→</b></a></nav></header>
+      <section class="landing-hero" id="product"><p class="eyebrow">INTELLIGENT PROCUREMENT CONTROL</p><h1>Move every purchase from <em>Request</em> to Receipt.</h1><p>A single operating view for sourcing materials, comparing suppliers, and keeping finance and inventory in step.</p><div><a class="hero-cta" href="/dashboard" data-enter-erp>Enter Procurement ERP <b>→</b></a><span>Preview the complete workspace</span></div></section>
+      <section class="journey" id="workflow" aria-label="Procurement journey"><article><strong>01</strong><h2>SOURCE</h2><p>Find the right supply</p></article><article><strong>02</strong><h2>COMPARE</h2><p>Make smarter supplier decisions</p></article><article><strong>03</strong><h2>RECEIVE</h2><p>Track the complete purchase journey</p></article></section>
+      <p class="landing-footer">Built for teams that keep business moving.</p>
+    </main>
+    <main class="app-shell" data-app-shell data-view="auth" hidden>
+      <section class="brand-panel">
+        <div class="brand-lockup"><span class="brand-mark">P</span><span>ProcureX</span></div>
+        <div class="brand-copy">
+          <p class="eyebrow">PROCUREMENT MANAGEMENT</p>
+          <h1>Your procurement workspace.</h1>
+          <p class="brand-description">Sign in to access your team’s requests, suppliers, purchase orders, inventory, and financial controls.</p>
+        </div>
+        <p class="panel-footer">Secure access for approved procurement teams and suppliers.</p>
+      </section>
+      <section class="auth-panel">
+        <div class="auth-header"><span class="status-indicator"><i></i><span data-api-label>System ready</span></span><span data-api-status-label>API checking</span></div>
+        <div class="auth-content" data-auth-view>
+          <div class="auth-intro"><p class="eyebrow">SECURE WORKSPACE ACCESS</p><h2 data-auth-title>Welcome back.</h2><p data-auth-description>Sign in to manage your procurement operations.</p></div>
+          <div class="auth-tabs" role="tablist" aria-label="Account access"><button type="button" class="auth-tab is-active" data-auth-tab="login" role="tab" aria-selected="true">Login</button><button type="button" class="auth-tab" data-auth-tab="register" role="tab" aria-selected="false">Register</button></div>
+          <div class="form-grid">
+            <form data-login-form data-auth-form="login">
+              <h3>Sign in</h3>
+              <label>Email <input name="email" type="email" placeholder="you@company.com" autocomplete="email" required /></label>
+              <label>Password <span class="password-field"><input name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required /><button type="button" class="password-toggle" data-password-toggle aria-label="Show password">Show</button></span></label>
+              <div class="form-options"><label class="check-label"><input name="remember" type="checkbox" /> Remember me</label><a href="#forgot-password">Forgot password?</a></div>
+              <button class="primary-button" type="submit"><span data-login-label>Sign in</span><span data-login-arrow>-&gt;</span></button>
+              <p class="form-message" data-login-message role="alert"></p>
+            </form>
+            <form data-register-form data-auth-form="register" hidden>
+              <h3>Create account</h3>
+              <label>Name <input name="name" placeholder="Your full name" autocomplete="name" required /></label>
+              <label>Email <input name="email" type="email" placeholder="you@company.com" autocomplete="email" required /></label>
+              <label>Password <input name="password" type="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required /></label>
+              <label>Role <select name="role" data-role-select required><option value="buyer">Buyer</option><option value="vendor">Vendor</option></select></label>
+              <div class="vendor-fields" data-vendor-fields hidden>
+                <label>Company name <input name="companyName" placeholder="Your registered company" /></label>
+                <label>Contact number <input name="contact" type="tel" placeholder="+91 98765 43210" /></label>
+                <label>Supply category <input name="category" placeholder="Semiconductors" /></label>
+                <label>Materials supplied <input name="materials" placeholder="Silicon wafers, sensors" /></label>
+                <label>Company information <textarea name="companyInformation" placeholder="Tell buyers about your capabilities"></textarea></label>
+              </div>
+              <button class="secondary-button" type="submit">Create account <span>+</span></button>
+            </form>
+          </div>
+          <p class="feedback" data-auth-feedback role="status"></p>
+        </div>
+        <section class="dashboard-view" data-dashboard-view hidden></section>
+        <p class="legal-note">Secure access for approved procurement teams and suppliers.</p>
+      </section>
+    </main>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/auth.js"></script>
+  </body>
+</html>
